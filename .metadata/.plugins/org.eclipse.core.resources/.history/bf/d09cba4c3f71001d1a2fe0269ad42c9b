@@ -1,0 +1,13 @@
+package common;
+
+import javax.servlet.http.HttpServletRequest;
+
+public class CommonUtil {
+	static public void appUrl(HttpServletRequest request) {
+		// URL - http://localhost/web/naverlogin.mb
+		String url = request.getRequestURL().toString();
+		// servletPath - /naverlogin.mb
+		String path = request.getServletPath();
+		// http://localhost/web
+	}
+}

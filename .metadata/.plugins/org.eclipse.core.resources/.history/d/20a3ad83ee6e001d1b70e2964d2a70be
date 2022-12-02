@@ -1,0 +1,27 @@
+package hr.command;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import common.Command;
+import hr.EmployeeDTO;
+import hr.HrDAO;
+
+public class EmployeeList implements Command {
+
+	@Override
+	public void exec(HttpServletRequest request, HttpServletResponse response) {
+		//부서목록 조회
+		HrDAO dao = new HrDAO();
+		List<DepartmentDTO> dList = dao.department_list();
+		
+		//사원목록 조회
+		List<EmployeeDTO> list = dao.employee_list();
+		
+		request.setAttribute("list", list);
+		
+	}
+
+}

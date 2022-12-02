@@ -1,0 +1,15 @@
+package member.command;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import common.Command;
+
+public class MemberLogin implements Command {
+
+	@Override
+	public void exec(HttpServletRequest request, HttpServletResponse response) {
+		//화면에서 입력한 아이디와 비밀번호가 일치하는 회원정보 조회
+	}
+
+}

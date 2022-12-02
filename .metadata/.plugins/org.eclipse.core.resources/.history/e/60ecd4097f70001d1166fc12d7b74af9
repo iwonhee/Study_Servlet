@@ -1,0 +1,25 @@
+package member;
+
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+
+import mybatis.HanulFactory;
+
+public class MemberDAO {
+	private SqlSession sql;
+	
+	//로그인 메소드
+	public void login(String id, String pw) {
+		connect();
+		//쿼리실행 메소드의 파라미터 제한
+		//전달할 데이터에 해당하는 파라미터가 여러개라면 
+		//데이터 객체를 사용하거나 HashMap을 지정
+		sql.selectOne("member.login", );
+		sql.close();
+	}
+	
+	private void connect() {
+		SqlSessionFactory factory = HanulFactory.getInstance();
+		sql = factory.openSession(true);
+	}
+}

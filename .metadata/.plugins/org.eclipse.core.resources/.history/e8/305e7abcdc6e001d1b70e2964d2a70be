@@ -1,0 +1,10 @@
+package hr;
+
+import java.sql.Date;
+
+public class EmployeeDTO {
+	private int employee_id, department_id, salary;
+	private String first_name, last_name, name, email, phone
+		, department_name, job_id, job_title;
+	private Date hire_date;
+}

@@ -1,0 +1,20 @@
+package customer.command;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import common.Command;
+import customer.CustomerDAO;
+
+public class CustomerInfo implements Command {
+
+	@Override
+	public void exec(HttpServletRequest request, HttpServletResponse response) {
+		//선택한 고객정보를 DB에서 조회
+		CustomerDAO dao = new CustomerDAO();
+		
+		//request에 담기
+		
+	}
+
+}

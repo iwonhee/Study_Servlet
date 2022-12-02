@@ -1,0 +1,18 @@
+package member.command;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import common.Command;
+
+public class NaverCallback implements Command {
+
+	@Override
+	public void exec(HttpServletRequest request, HttpServletResponse response) {
+		//API 요청 성공시 : http://콜백URL/redirect?code={code값}&state={state값}
+		//API 요청 실패시 : http://콜백URL/redirect?state={state값}&error={에러코드값}&error_description={에러메시지}
+		String state = request.getParameter("state");
+		String code = request.getParameter("code");
+	}
+
+}

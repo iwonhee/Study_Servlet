@@ -1,0 +1,19 @@
+package customer.command;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import common.Command;
+
+public class CustomerUpdate implements Command {
+
+	@Override
+	public void exec(HttpServletRequest request, HttpServletResponse response) {
+		
+		// 화면에서 입력한 정보 수집
+		
+		// 수집한 정보를 DB에 변경저장처리 : DAO
+		
+	}
+
+}

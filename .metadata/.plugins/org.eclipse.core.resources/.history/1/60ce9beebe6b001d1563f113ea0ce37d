@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>홈</h3>
+<div class='menu'>
+	<a href='list.cu'>고객관리</a>
+</div>
+
+<br>
+<div class="menu">
+	<a href="color_choice.jsp?c=white">white</a>
+	<a href="color_choice.jsp?c=blue">blue</a>
+	<a href="color_choice.jsp?c=black">black</a>
+</div>
+<br>
+<div>${cc}</div>
+<br>
+<div class="bar"></div>
+</body>
+</html>

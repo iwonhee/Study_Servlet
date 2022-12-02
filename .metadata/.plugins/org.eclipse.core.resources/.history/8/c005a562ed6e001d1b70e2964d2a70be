@@ -1,0 +1,6 @@
+package hr;
+
+public class DepartmentDTO {
+	private int department_id, location_id, manager_id;
+	private String deartment_name;
+}

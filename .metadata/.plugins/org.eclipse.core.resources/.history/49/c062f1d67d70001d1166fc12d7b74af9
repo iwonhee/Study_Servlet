@@ -1,0 +1,15 @@
+package member;
+
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+
+import mybatis.HanulFactory;
+
+public class MemberDAO {
+	private SqlSession sql;
+	
+	private void connect() {
+		SqlSessionFactory factory = HanulFactory.getInstance();
+		sql = factory.openSession(true);
+	}
+}
