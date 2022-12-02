@@ -18,8 +18,9 @@
         <jsp:include page="include/navigation.jsp"/>
         <!-- Page content-->
     <div class="container-fluid">
-    	<h1 class="mt-4">홈</h1>
-        <img alt="" src="images/home.jpg" style='width:80%'>    
+    	<!-- <h1 class="mt-4">홈</h1> -->
+    	<div class='home-bg'></div>
+        <!-- <img alt="" src="images/astronomy.jpg" style='width:80%'> -->    
             </div>
         </div>
     </div>

@@ -29,7 +29,7 @@ public class CommonUtil {
 		      }
 		      br.close();
 		      if(responseCode==200) {
-		        System.out.print(res.toString());
+//		        System.out.print(res.toString());
 		      }
 		      apiURL = res.toString();
 		    } catch (Exception e) {
@@ -60,7 +60,7 @@ public class CommonUtil {
 		      }
 		      br.close();
 		      if(responseCode==200) {
-		        System.out.print(res.toString());
+//		        System.out.print(res.toString());
 		      }
 		      System.out.println();
 		      apiURL = res.toString();

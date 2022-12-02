@@ -3,14 +3,24 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 <link href="css/styles.css" rel="stylesheet" />
+<!-- 폰트어썸 cdn -->
+<link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js'></script>
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
     <div class="container-fluid">
         <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                	<img class='profile' src='${loginInfo.profile_image}'>
+                <li class="nav-item active nav-li">
+                	<c:if test='${! empty loginInfo}'>
+	                	<c:if test='${!empty loginInfo.profile_image}'>
+		                	<img class='profile' src='${loginInfo.profile_image}'>
+	                	</c:if>
+	                	<c:if test='${empty loginInfo.profile_image}'>
+	                		<i class="font fa-regular fa-circle-user"></i>
+	                	</c:if>
+                	</c:if>
                 	<span style='margin-right:20px'>${loginInfo.name}</span>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#!">Link</a></li>

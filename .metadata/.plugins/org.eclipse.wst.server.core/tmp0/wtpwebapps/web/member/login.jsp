@@ -20,6 +20,11 @@
 			background-size:cover;
 			border:none;
 		}
+		.kakao{
+			background:url("images/kakao_login.png") center;
+			background-size:cover;
+			border:none;
+		}
 	</style>
 </head>
 <body>
@@ -40,6 +45,7 @@
 	    		<li><input onclick="fn_login()" class='btn btn-primary' type='button' value='로그인'></li>
 	    		<li><br></li>
 	    		<li><input type='button' class='btn btn-secondary naver' ></li>
+	    		<li><input type='button' class='btn btn-secondary kakao' ></li>
 	    	</ul>		
 		</div>
                     
@@ -51,6 +57,10 @@
 	//네이버 로그인 버튼 클릭시
 	$('.naver').click(function(){
 		location='naverlogin.mb';
+	});
+	//카카오 로그인 버튼 클릭시
+	$('.kakao').click(function(){
+		location='kakaologin.mb';
 	});
 
 	function emptyCheck(){

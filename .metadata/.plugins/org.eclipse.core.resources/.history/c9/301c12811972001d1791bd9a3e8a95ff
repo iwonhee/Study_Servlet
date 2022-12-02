@@ -1,0 +1,30 @@
+package customer.command;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import common.Command;
+
+public class KakaoCallback implements Command {
+
+	@Override
+	public void exec(HttpServletRequest request, HttpServletResponse response) {
+		String code = request.getParameter("code");
+		
+		if( code != null ) {
+//			curl -v -X POST "https://kauth.kakao.com/oauth/token" \
+//			 -H "Content-Type: application/x-www-form-urlencoded" \
+//			 -d "grant_type=authorization_code" \
+//			 -d "client_id=${REST_API_KEY}" \
+//			 --data-urlencode "redirect_uri=${REDIRECT_URI}" \
+//			 -d "code=${AUTHORIZE_CODE}"
+			
+			StringBuffer url = new StringBuffer(
+					"https://kauth.kakao.com/oauth/token?grant_type=authorization_code");
+			url.append("&client_id=").append((String)request.getAttribute("kakao_id"));
+			
+		}// code값  if문
+		
+	}
+
+}

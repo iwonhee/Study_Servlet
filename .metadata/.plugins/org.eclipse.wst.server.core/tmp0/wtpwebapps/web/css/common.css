@@ -9,6 +9,12 @@ ul{
 	padding:0;
 	margin:0;
 }
+.home-bg{
+	height:900px;
+	background: url("../images/astronomy.jpg"), no-repeat, center, center;
+	background-size:cover;
+}
+.nav-li {display:flex; align-items:center; column-gap:10px;}
 #list-top{
 	display:flex;
 	justify-content: space-between;
@@ -39,6 +45,7 @@ select{
 .click a{display:block; padding:12px 0 9px 0; transition:all .2s}
 .click a:hover{background-color:#0d6efd; color:#fff; text-decoration:none}
 
+
 .list-flex{
 	display:flex;
 	justify-content: space-between;
@@ -48,7 +55,13 @@ select{
 .list-flex>div{
 	margin:0;
 }
-
+.profile{
+	width:40px;
+	height:40px;
+	object-fit : cover;
+	border-radius:50%;
+}
+.font{font-size:40px; color:#ccc;}
 .box{
 	width:320px;
 	margin:20px auto;
@@ -64,6 +77,7 @@ select{
 	margin-left:5px;
 	margin-right:5px;
 }
+
 .center{
 	position:absolute;
 	left:50%; top:50%;
