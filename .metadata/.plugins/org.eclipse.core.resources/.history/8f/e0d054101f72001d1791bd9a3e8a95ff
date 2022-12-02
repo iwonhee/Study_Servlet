@@ -63,12 +63,10 @@ public class KakaoCallback implements Command {
 						json.getString("phone_number") : "");
 				
 				// 안쪽 JSON
-				if( json.has("profile")) {
-					json = json.getJSONObject("profile");
-					dto.setProfile_image(
-							json.has("profile_image")
-							? json.getString("profile_image_url") : "");
-				}
+				json = json.getJSONObject("profile");
+				dto.setProfile_image(
+						json.has("profile_image")
+						? json.getString("profile_image_url") : "");
 				
 			
 				MemberDAO dao = new MemberDAO();
