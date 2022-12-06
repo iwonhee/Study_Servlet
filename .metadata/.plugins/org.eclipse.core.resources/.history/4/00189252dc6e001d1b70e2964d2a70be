@@ -1,5 +1,0 @@
-package employee;
-
-public class EmployeeDTO {
-	private int employee_id, salary, department_id;
-}

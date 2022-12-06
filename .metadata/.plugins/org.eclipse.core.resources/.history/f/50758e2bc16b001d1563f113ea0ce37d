@@ -1,7 +1,0 @@
-package customer;
-
-import org.apache.ibatis.session.SqlSession;
-
-public class CustomerDAO {
-	private SqlSession sql;	//쿼리문 실행 메소드가 있는 객체
-}
